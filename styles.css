@@ -513,7 +513,7 @@ img {
   padding: 6px 16px;
   border-radius: 25px;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 2rem;
   box-shadow: 0 0 12px #ff4d4d;
   margin-bottom: 10px;
   animation: pulse 1.5s infinite;
@@ -988,7 +988,96 @@ video {
   }
 }
 
+    .pricing-section {
+      text-align: center;
+      max-width: 1200px;
+      margin: auto;
+    }
 
+    .pricing-title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .pricing-table {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .pricing-card {
+      background: #fff;
+      color: #000;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      padding: 2rem;
+      width: 100%;
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .pricing-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #263576;
+    }
+
+    .features {
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+
+    .features li {
+      margin-bottom: 0.5rem;
+      list-style: "✔ ";
+      padding-left: 0.5rem;
+  font-size: 1.05rem; /* Increased font size */
+
+    }
+
+
+
+
+    .price {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: green;
+    }
+
+    .original-price {
+      text-decoration: line-through;
+      color: #aaa;
+      font-size: 1rem;
+      margin-left: 0.5rem;
+    }
+
+    .buy-btn {
+      background-color: #fdd835;
+      color: #000;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: 0.3s ease;
+    }
+
+    .buy-btn:hover {
+      background-color: #f19c3b;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .pricing-card {
+        max-width: 100%;
+      }
+    }
 /* ===== WORK =====*/
    .faq-section {
       max-width: 900px;
@@ -1607,3 +1696,4 @@ video {
   }
 }
 
+/*  */
