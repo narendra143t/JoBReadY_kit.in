@@ -72,3 +72,10 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
       const faq = element.parentElement;
       faq.classList.toggle("open");
     }
+
+    // testimonals
+    function scrollTestimonials(direction) {
+  const wrapper = document.getElementById("testimonialWrapper");
+  const scrollAmount = 320; // Adjust for card width + gap
+  wrapper.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
