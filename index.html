@@ -10,8 +10,22 @@
          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
 
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.2/lottie.min.js"></script>
+  <style>
+    /* Smooth scroll for buttons */
+    #testimonialWrapper {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>   
+
 
         <title>Portfolio website complete</title>
+         <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ✅ Optional: Lottie player for animation -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -27,8 +41,10 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">complete kit</a></li>
-                             <li class="nav__item"><a href="#work" class="nav__link">Testimonals</a></li>
+                           <li class="nav__item"><a href="#home1" class="nav__link">free kit</a></li>
+                                 <li class="nav__item"><a href="#work" class="nav__link">Testimonals</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Premium kit</a></li>
+                       
                          <li class="nav__item"><a href="#skills" class="nav__link">FAQs</a></li>
                           <!-- <li class="nav__item"><a href="#work" class="nav__link">work</a></li> -->
                          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
@@ -45,101 +61,243 @@
             <!--===== HOME =====-->
 
 
-            <section class="home bd-grid" id="home">
-                 <div class="hero-box">
-          <div class="hero-title">
-            
-            🎯 <span>Become Job Ready in 30 Days <span class="buy-btn pulse">Stop Wasting 6-12 Months On Random Course </span>
-          </div>
+        <section class="hero bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-24 px-6">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+    
+    <!-- Hero Text -->
+    <div class="space-y-6">
+      <span class="inline-block bg-yellow-400 text-black font-semibold text-sm px-4 py-1 rounded-full animate-pulse">
+        🔥 New + Trending
+      </span>
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+        Master <span class="text-yellow-400">DSA, Web Dev</span>, & Projects with <br />
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-500">Premium Courses</span>
+      </h1>
+      <p class="text-lg text-gray-300">
+        Curated content built by experts. Learn Java, Git, Aptitude, WebDev & more — plus unlock exclusive paid projects, interview kits & career-boosting tools. Build your dev career 10x faster 🚀
+      </p>
 
-          <div class="hero-subtitle">
-            Get Hired with Real Projects, Skills & Proof — No Extra Courses Needed.No Guesswork
-          </div>
+      <!-- CTA Buttons -->
+      <div class="flex flex-wrap items-center gap-4 mt-6">
+        <a href="#home1" class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-3 rounded-lg transition-all shadow-lg">
+          📘 Start Free Learning
+        </a>
+        <a href="#about" class="border border-gray-400 hover:border-yellow-400 hover:text-yellow-400 text-white font-semibold px-6 py-3 rounded-lg transition-all">
+          🚀 Explore Premium
+        </a>
+      </div>
 
-          <p class="hero-desc">
-            One simple kit to go from “learning” to “earning”. Built for real
-            results.
-          </p>
+      <!-- Urgency Note -->
+      <p class="text-sm text-gray-400 mt-4">
+        ⏳ Only <span class="text-yellow-400 font-semibold">47 Premium Seats</span> left this month.
+      </p>
+    </div>
 
-          <div class="hero-warning">
-            ⚠ <strong>90% Of Graduates never get shortlisted.</strong><br />
-            <small>This kit flips the odds —But access is Limited.</small>
-          </div>
+    <!-- Hero Illustration or Lottie Animation -->
+    <div id="lottie-hero" class="w-full h-80 md:h-[500px] bg-cover bg-center rounded-lg shadow-lg">
+      <!-- Optional: Add Lottie animation or hero image -->
+      <!-- <lottie-player src="your-animation.json" background="transparent" speed="1" loop autoplay></lottie-player> -->
+    </div>
 
-     
+  </div>
+</section>
 
+  <!-- freee kit -->
+      <!-- Courses Section -->
+<section class="py-24 px-6 bg-gradient-to-b from-gray-900 via-black to-gray-900" id="home1">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      
+      <!-- Aptitude Card -->
+      <div class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col justify-between transition hover:scale-105 duration-300">
+        <div>
+          <div class="text-3xl w-12 h-12 bg-green-500 text-black flex items-center justify-center rounded-full mb-4">📘</div>
+          <h3 class="text-xl font-bold mb-2">Aptitude Mastery</h3>
+          <ul class="text-gray-300 space-y-1 text-sm">
+            <li>• Basic to advanced problem-solving</li>
+            <li>• Arithmetic (percentages, ratios)</li>
+            <li>• Logical reasoning</li>
+          </ul>
         </div>
-        
-</div>
+        <div class="mt-6 flex items-center justify-between">
+          <img src="https://img.icons8.com/ios-filled/100/aptitude.png" alt="Aptitude" class="w-10 h-10">
+          <a href="aptitude.html" class="text-yellow-400 font-semibold hover:underline">Watch Now →</a>
+        </div>
+      </div>
 
+      <!-- Programming Card -->
+      <div class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col justify-between transition hover:scale-105 duration-300">
+        <div>
+          <div class="text-3xl w-12 h-12 bg-orange-500 text-black flex items-center justify-center rounded-full mb-4">💻</div>
+          <h3 class="text-xl font-bold mb-2">Programming Languages (Basics)</h3>
+          <ul class="text-gray-300 space-y-1 text-sm">
+            <li>• Java syntax and OOP</li>
+            <li>• Python introductory projects</li>
+            <li>• C programming basics</li>
+          </ul>
+        </div>
+        <div class="mt-6 flex items-center justify-between">
+          <img src="https://img.icons8.com/ios-filled/100/language.png" alt="Programming" class="w-10 h-10">
+          <a href="programming.html" class="text-yellow-400 font-semibold hover:underline">Watch Now →</a>
+        </div>
+      </div>
 
-<div class="combo-hero glow-effect" style="color: #fff;">
-  <!-- TOP BADGES -->
-  <div class="badge-strip">
-    <span class="badge badge-hot pulse">🏆 Bestseller </span>
-    <span class="badge badge-limited blink">⏳ Only <strong>20</strong> Premium Slots Left</span>
+      <!-- DSA Card -->
+      <div class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col justify-between transition hover:scale-105 duration-300">
+        <div>
+          <div class="text-3xl w-12 h-12 bg-blue-500 text-black flex items-center justify-center rounded-full mb-4">🔢</div>
+          <h3 class="text-xl font-bold mb-2">DSA (Data Structures & Algorithms)</h3>
+          <ul class="text-gray-300 space-y-1 text-sm">
+            <li>• Sorting, searching, and graphs</li>
+            <li>• Arrays, stacks, and queues</li>
+            <li>• 300 problem roadmap</li>
+          </ul>
+        </div>
+        <div class="mt-6 flex items-center justify-between">
+          <img src="https://img.icons8.com/ios-filled/100/dsa.png" alt="DSA" class="w-10 h-10">
+          <a href="dsa.html" class="text-yellow-400 font-semibold hover:underline">Watch Now →</a>
+        </div>
+      </div>
+
+      <!-- Web Dev Card -->
+      <div class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col justify-between transition hover:scale-105 duration-300">
+        <div>
+          <div class="text-3xl w-12 h-12 bg-yellow-400 text-black flex items-center justify-center rounded-full mb-4">🌐</div>
+          <h3 class="text-xl font-bold mb-2">Web Development (Basics)</h3>
+          <ul class="text-gray-300 space-y-1 text-sm">
+            <li>• HTML, CSS, and JavaScript</li>
+            <li>• Responsive design</li>
+            <li>• Simple project ideas</li>
+          </ul>
+        </div>
+        <div class="mt-6 flex items-center justify-between">
+          <img src="https://img.icons8.com/ios-filled/100/web.png" alt="Web Dev" class="w-10 h-10">
+          <a href="webdev.html" class="text-yellow-400 font-semibold hover:underline">Watch Now →</a>
+        </div>
+      </div>
+
+      <!-- Git & GitHub Card -->
+      <div class="bg-gray-800 rounded-2xl shadow-lg p-6 flex flex-col justify-between transition hover:scale-105 duration-300">
+        <div>
+          <div class="text-3xl w-12 h-12 bg-red-500 text-black flex items-center justify-center rounded-full mb-4">🐙</div>
+          <h3 class="text-xl font-bold mb-2">Git & GitHub</h3>
+          <ul class="text-gray-300 space-y-1 text-sm">
+            <li>• Source control fundamentals</li>
+            <li>• Creating repos, branches, PRs</li>
+          </ul>
+        </div>
+        <div class="mt-6 flex items-center justify-between">
+          <img src="https://img.icons8.com/ios-filled/100/github.png" alt="GitHub" class="w-10 h-10">
+          <a href="git.html" class="text-yellow-400 font-semibold hover:underline">Watch Now →</a>
+        </div>
+      </div>
+
+    </div>
   </div>
+</section>
 
-  <!-- MAIN HEADLINE -->
-  <h1 class="combo-title" style="color: #fff;">
-    🚀 <span class="highlight-text" style="color: #f19c3b;">1-on-1 Premium Setup Kit</span> — Done-For-You Portfolio, Projects & More!
-  </h1>
-
-  <!-- SUBHEADLINE -->
-  <div class="combo-subheadline" style="color: #fff;">
-    💥 <strong>Build Your Tech Brand in 24–48 Hours</strong> — Only <span class="price-highlight" style="color: #f19c3b;">₹4999</span>
-  </div>
-
-  <!-- DESCRIPTION -->
-  <p class="combo-description" style="color: #fff;">
-    🎁 <strong>We Build, You Shine</strong> — Portfolio Website, 3 Projects, Resume Setup 
-  </p>
-
-  <!-- FEATURE LIST -->
-  <div class="combo-features">
-    <h3 style="color: #fff;">💼 Personal Portfolio Website — <strong>Skills, Resume, and Social Profiles Integrated</strong></h3>
-    <h3 style="color: #fff;">⚡ 1-on-1 Premium Setup — <strong>We Handle the Entire Tech Build for You</strong></h3>
-    <h3 style="color: #fff;">🧠 Java + DSA Mastery — <strong>300+ Solved Questions + Mentorship</strong></h3>
-    <h3 style="color: #fff;">🌐 Full-Stack Dev Track — <strong>MERN Stack, GitHub, & Recruiter-Approved Builds</strong></h3>
-  </div>
-
-  <!-- VALUE PROPOSITION -->
-  <div class="combo-banner" style="color: #f19c3b; font-weight: 600;">
-    🎯 ₹20,000+ Value — <strong>All Done-for-You. Fast. Professional. Effective.</strong>
-  </div>
-
-  <!-- PRICING SECTION -->
-  <div class="combo-pricing">
-    <p class="combo-price" style="color: #fff;">
-      🔥 <span class="price-now" style="color: #f19c3b; font-size: 1.6rem; font-weight: bold;">₹4999</span>
-      <span class="price-before" style="text-decoration: line-through; opacity: 0.6;">₹8999</span>
-    </p>
-  <a href="https://wa.me/919581621692?text=Hi%2C%20I%20want%20to%20DM%20now%20for%20Premium%20Kit%20Access.%20Please%20help%20me%20with%20complete%20setup.%20I%20heard%20your%20team%20responds%2024hrs%20for%20full%20support." 
-   class="cta-button animated-glow pulse" 
-   style="background-color: #25D366; color: #fff;" 
-   target="_blank">
-  💬 DM Now on WhatsApp – Our Team Responds 24/7 for Complete Setup
-</a>
-
-
-    <p class="combo-urgency" style="color: #fff; font-weight: bold;">
-      ⏰ Limited Offer! <span class="countdown blink">03:59:59</span> Left — <span class="blinker">Secure Your Slot Now!</span>
-    </p>
-  
-  </div>
- 
-
-
-</div>
 
 
  <!--  -->
 
        
-            </section>
+         
+        <!-- Testimonals -->
+          <section class="work section" id="work">
+            <section id="work" class="py-24 px-6 bg-gradient-to-b from-black via-gray-900 to-black">
+  <div class="max-w-7xl mx-auto">
+
+    <h2 class="text-3xl md:text-4xl font-extrabold text-yellow-400 mb-10 text-center">
+      💬 Loved by 1000+ Learners
+    </h2>
+
+    <div class="relative">
+
+      <!-- Scroll Buttons -->
+      <button class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-gray-700 hover:bg-yellow-400 hover:text-black text-white p-2 rounded-full shadow-md" onclick="scrollTestimonials(-1)">
+        ←
+      </button>
+
+      <div id="testimonialWrapper" class="flex overflow-x-auto space-x-6 scrollbar-hide px-6 py-4">
         
+        <!-- Testimonial Card -->
+        <div class="min-w-[300px] max-w-sm flex-shrink-0 bg-gray-800 p-6 rounded-2xl shadow-lg transition hover:scale-105 duration-300">
+          <div class="text-yellow-400 text-lg mb-2">⭐⭐⭐⭐⭐</div>
+          <h3 class="font-bold text-lg mb-2">Amazing teaching skills. Everything was made easy to understand</h3>
+          <p class="text-gray-300 text-sm">The GitHub setup always confused me, but the video + 1-on-1 support made it crystal clear. I can now confidently show my work!</p>
+          <div class="mt-4 text-sm text-gray-400">
+            <strong>Aditya</strong> <br />
+            <span>CSE 4th Year</span>
+          </div>
+        </div>
+
+        <div class="min-w-[300px] max-w-sm flex-shrink-0 bg-gray-800 p-6 rounded-2xl shadow-lg transition hover:scale-105 duration-300">
+          <div class="text-yellow-400 text-lg mb-2">⭐⭐⭐⭐⭐</div>
+          <h3 class="font-bold text-lg mb-2">No more confusion — Just clarity & results!</h3>
+          <p class="text-gray-300 text-sm">From project building to resume, every single part was guided. I got 3 interviews after uploading my portfolio!</p>
+          <div class="mt-4 text-sm text-gray-400">
+            <strong>Vishu</strong> <br />
+            <span>B.Com</span>
+          </div>
+        </div>
+
+        <div class="min-w-[300px] max-w-sm flex-shrink-0 bg-gray-800 p-6 rounded-2xl shadow-lg transition hover:scale-105 duration-300">
+          <div class="text-yellow-400 text-lg mb-2">⭐⭐⭐⭐⭐</div>
+          <h3 class="font-bold text-lg mb-2">Saved me ₹20,000+ worth of courses</h3>
+          <p class="text-gray-300 text-sm">The Telegram private content is gold. Everything that was confusing on YouTube is simplified here.</p>
+          <div class="mt-4 text-sm text-gray-400">
+            <strong>Uday</strong> <br />
+            <span>BSE</span>
+          </div>
+        </div>
+
+        <div class="min-w-[300px] max-w-sm flex-shrink-0 bg-gray-800 p-6 rounded-2xl shadow-lg transition hover:scale-105 duration-300">
+          <div class="text-yellow-400 text-lg mb-2">⭐⭐⭐⭐⭐</div>
+          <h3 class="font-bold text-lg mb-2">Confidence to apply for top tech roles</h3>
+          <p class="text-gray-300 text-sm">Before this, I was scared to even apply. Now my LinkedIn & GitHub are updated and recruiters are actually responding.</p>
+          <div class="mt-4 text-sm text-gray-400">
+            <strong>Yeswanth</strong> <br />
+            <span>ECE 3rd Year</span>
+          </div>
+        </div>
+
+        <div class="min-w-[300px] max-w-sm flex-shrink-0 bg-gray-800 p-6 rounded-2xl shadow-lg transition hover:scale-105 duration-300">
+          <div class="text-yellow-400 text-lg mb-2">⭐⭐⭐⭐⭐</div>
+          <h3 class="font-bold text-lg mb-2">Everything was done-for-me in 2 days!</h3>
+          <p class="text-gray-300 text-sm">Portfolio, projects, resume — all setup by their team. I just had to review and upload. Absolute time-saver!</p>
+          <div class="mt-4 text-sm text-gray-400">
+            <strong>Kumar</strong> <br />
+            <span>Final Year Student</span>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-gray-700 hover:bg-yellow-400 hover:text-black text-white p-2 rounded-full shadow-md" onclick="scrollTestimonials(1)">
+        →
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ✅ Scroll Script -->
+<script>
+  function scrollTestimonials(direction) {
+    const wrapper = document.getElementById('testimonialWrapper');
+    const scrollAmount = 350;
+    wrapper.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+</script>
+                   
+                </section>
+
         
             <!--===== ABOUT =====-->
+
 
             <section class="about section " id="about"> 
                   <div class="container">
@@ -261,9 +419,6 @@
   </div>
 
   <!-- CTA Button -->
-  <a href="#buy" class="cta-btn pulse buy-btn">
-  🛒 Buy Now – Only ₹1299
-  </a>
 
 
 
@@ -589,10 +744,73 @@
               
       <!-- <section class="premium-container"> -->
 <section >
-<div class="combo-hero glow-effect">
+    <div class="container">
+   <div class="combo-hero glow-effect" style="color: #fff;">
   <!-- TOP BADGES -->
   <div class="badge-strip">
-    <span class="badge badge-hot">🔥 #1 Bestseller</span>
+    <span class="badge badge-hot pulse">Bestseller </span>
+    <!-- <span class="badge badge-limited blink">⏳ Only <strong>20</strong> Premium Slots Left</span> -->
+  </div>
+
+  <!-- MAIN HEADLINE -->
+  <h1 class="combo-title" style="color: #fff;">
+    🚀 <span class="highlight-text" style="color: #f19c3b;">1-on-1 Premium Setup Kit</span> — Done-For-You Portfolio, Projects & More!
+  </h1>
+
+  <!-- SUBHEADLINE -->
+  <div class="combo-subheadline" style="color: #fff;">
+    💥 <strong>Build Your Tech Brand in 24–48 Hours</strong> — Only <span class="price-highlight" style="color: #f19c3b;">₹4999</span>
+  </div>
+
+  <!-- DESCRIPTION -->
+  <p class="combo-description" style="color: #fff;">
+    🎁 <strong>We Build, You Shine</strong> — Portfolio Website, 3 Projects, Resume Setup 
+  </p>
+
+  <!-- FEATURE LIST -->
+  <div class="combo-features">
+    <h3 style="color: #fff;">💼 Personal Portfolio Website — <strong>Skills, Resume, and Social Profiles Integrated</strong></h3>
+    <h3 style="color: #fff;">⚡ 1-on-1 Premium Setup — <strong>We Handle the Entire Tech Build for You</strong></h3>
+    <h3 style="color: #fff;">🧠 Java + DSA Mastery — <strong>300+ Solved Questions + Mentorship</strong></h3>
+    <h3 style="color: #fff;">🌐 Full-Stack Dev Track — <strong>MERN Stack, GitHub, & Recruiter-Approved Builds</strong></h3>
+  </div>
+
+  <!-- VALUE PROPOSITION -->
+  <div class="combo-banner" style="color: #f19c3b; font-weight: 600;">
+    🎯 ₹20,000+ Value — <strong>All Done-for-You. Fast. Professional. Effective.</strong>
+  </div>
+
+  <!-- PRICING SECTION -->
+  <div class="combo-pricing">
+    <p class="combo-price" style="color: #fff;">
+      🔥 <span class="price-now" style="color: #f19c3b; font-size: 1.6rem; font-weight: bold;">₹4999</span>
+      <span class="price-before" style="text-decoration: line-through; opacity: 0.6;">₹8999</span>
+    </p>
+  <a href="https://wa.me/919581621692?text=Hi%2C%20I%20want%20to%20DM%20now%20for%20Premium%20Kit%20Access.%20Please%20help%20me%20with%20complete%20setup.%20I%20heard%20your%20team%20responds%2024hrs%20for%20full%20support." 
+   class="cta-button animated-glow pulse" 
+   style="background-color: #25D366; color: #fff;" 
+   target="_blank">
+  💬 DM Now on WhatsApp – Our Team Responds 24/7 for Complete Setup
+</a>
+
+
+    <p class="combo-urgency" style="color: #fff; font-weight: bold;">
+      ⏰ Limited Offer! <span class="countdown blink">03:59:59</span> Left — <span class="blinker">Secure Your Slot Now!</span>
+    </p>
+  
+  </div>
+ 
+
+
+</div>
+
+</div>
+
+<div class="combo-hero glow-effect">
+  
+  <!-- TOP BADGES -->
+  <div class="badge-strip">
+    <span class="badge badge-hot">🔥 #Bestseller</span>
     <!-- <span class="badge badge-limited">⏳ Only <strong>27</strong> Slots Left</span> -->
   </div>
 
@@ -644,85 +862,9 @@
 
   
      
-   <!-- testimonals -->
+
      
-            <section class="work section" id="work">
-                    <!-- Testimonials Section -->
-<!-- <div class="testimonial-section"> -->
-  <h2 class="testimonial-heading" style="">💬 Loved by 1000+ Learners</h2>
-  <div class="testimonial-scroll-container">
-    <button class="scroll-btn left" onclick="scrollTestimonials(-1)">←</button>
-    <div class="testimonial-wrapper" id="testimonialWrapper">
-      
-      <!-- Testimonial Card -->
-      <div class="testimonial-card">
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <h3>Amazing teaching skills. Everything was made easy to understand</h3>
-        <p>The GitHub setup always confused me, but the video + 1-on-1 support made it crystal clear. I can now confidently show my work!</p>
-        <div class="user-info">
-          <!-- <img src="https://i.pravatar.cc/48?img=11" alt="User" /> -->
-             <div>
-            <strong>Aditya </strong><br><span class="faq-question">CSE 4th year</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <h3>No more confusion — Just clarity & results!</h3>
-        <p>From project building to resume, every single part was guided. I got 3 interviews after uploading my portfolio!</p>
-        <div class="user-info">
-          <!-- <img src="https://i.pravatar.cc/48?img=23" alt="User" /> -->
-          <div>
-            <strong>vishu</strong><br><span class="faq-question">B.com</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <h3>Saved me ₹20,000+ worth of courses</h3>
-        <p>The Telegram private content is gold. Everything that was confusing on YouTube is simplified here.</p>
-        <div class="user-info">
-          <!-- <img src="https://i.pravatar.cc/48?img=8" alt="User" /> -->
-          <div>
-            <strong>uday</strong><br><span class="faq-question">BSE</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <h3>Confidence to apply for top tech roles</h3>
-        <p>Before this, I was scared to even apply. Now my LinkedIn & GitHub are updated and recruiters are actually responding.</p>
-        <div class="user-info">
-          <!-- <img src="https://i.pravatar.cc/48?img=31" alt="User" /> -->
-          <div>
-            <strong>yeswanth</strong><br><span class="faq-question">ECE 3rd year</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-card">
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <h3>Everything was done-for-me in 2 days!</h3>
-        <p>Portfolio, projects, resume — all setup by their team. I just had to review and upload. Absolute time-saver!</p>
-        <div class="user-info">
-          <!-- <img src="https://i.pravatar.cc/48?img=13" alt="User" /> -->
-          <div>
-            <strong>kumar </strong><br><span class="faq-question">Final Year Student</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Add 5 more below similarly if needed -->
-      <!-- ... -->
-    </div>
-    <button class="scroll-btn right" onclick="scrollTestimonials(1)">→</button>
-  </div>
-
-                </section>
-
+           
             <!--===== FAQs =====-->
             <section class="skills section" id="skills">
                 <div class="faq-section">

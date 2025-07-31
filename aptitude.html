@@ -1,0 +1,198 @@
+<div class="container">
+  <div class="welcome">
+    <h1>Welcome to Aptitude Mastery 🚀</h1>
+    <p>Sharpen your mind with aptitude questions covering Number System, Percentages, Time & Work, and more. Master concepts from basics to advanced with guided videos.</p>
+  </div>
+
+  <!-- Number System -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('numsys')">Number System <span>▶</span></div>
+    <div class="subtopics" id="numsys">
+      <iframe height="400" src="https://www.youtube.com/embed/videoseries?list=PLOoogDtEDyvvLxig0poIGPWnGF74R4uxq" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Percentages -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('percentage')">Percentages <span>▶</span></div>
+    <div class="subtopics" id="percentage">
+      <iframe height="400" src="https://www.youtube.com/watch?v=LdpsPknN-Ew&list=PLOoogDtEDyvvqaKSM-ZkwAqUyjyR402HH" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Time and Work -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('timework')">Time and Work <span>▶</span></div>
+    <div class="subtopics" id="timework">
+     <iframe
+  width="100%"
+  height="400"
+  src="https://www.youtube.com/embed/videoseries?list=PLOoogDtEDyvvLxig0poIGPWnGF74R4uxq"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen>
+</iframe>
+
+    </div>
+  </div>
+
+  <!-- Time, Speed, and Distance -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('tsd')">Time, Speed, and Distance <span>▶</span></div>
+    <div class="subtopics" id="tsd">
+      <iframe src="https://www.youtube.com/embed/znv_jrJlcOw" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Profit and Loss -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('profitloss')">Profit and Loss <span>▶</span></div>
+    <div class="subtopics" id="profitloss">
+      <iframe src="https://www.youtube.com/embed/yCC9eN9NmcU" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Ratio and Proportion -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('ratio')">Ratio and Proportion <span>▶</span></div>
+    <div class="subtopics" id="ratio">
+      <iframe src="https://www.youtube.com/embed/o-wQ_tjR_A0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Averages -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('averages')">Averages <span>▶</span></div>
+    <div class="subtopics" id="averages">
+      <iframe src="https://www.youtube.com/embed/dWmh7Wn5U20" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Simple and Compound Interest -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('interest')">Simple & Compound Interest <span>▶</span></div>
+    <div class="subtopics" id="interest">
+      <iframe src="https://www.youtube.com/embed/nkYVXRGcAPs" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Permutations & Combinations -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('pnc')">Permutations & Combinations <span>▶</span></div>
+    <div class="subtopics" id="pnc">
+      <iframe src="https://www.youtube.com/embed/cFbW4uJUo3k" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Probability -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('probability')">Probability <span>▶</span></div>
+    <div class="subtopics" id="probability">
+      <iframe src="https://www.youtube.com/embed/IrbX9Gq2y78" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Logarithms -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('logarithms')">Logarithms <span>▶</span></div>
+    <div class="subtopics" id="logarithms">
+      <iframe src="https://www.youtube.com/embed/R1-mOYX4A5c" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleTopic(id) {
+    const el = document.getElementById(id);
+    el.style.display = el.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+
+<style>
+  body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.welcome h1 {
+  font-size: 28px;
+  color: #2b4eff;
+}
+
+.welcome p {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+  margin: auto;
+}
+
+.topic {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.topic-header {
+  padding: 15px 20px;
+  background: #2b4eff;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topic-header:hover {
+  background: #1e3bd6;
+}
+
+.subtopics {
+  display: none;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.subtopics iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+  border: none;
+  display: block;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .welcome h1 {
+    font-size: 22px;
+  }
+
+  .topic-header {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+
+  .subtopics iframe {
+    height: 200px;
+  }
+}
+
+</style>

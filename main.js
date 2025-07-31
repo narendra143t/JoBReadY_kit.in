@@ -79,3 +79,11 @@ sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
   const scrollAmount = 320; // Adjust for card width + gap
   wrapper.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
 }
+
+  var animation = lottie.loadAnimation({
+    container: document.getElementById('lottie-hero'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'Man working on computer.json' // Make sure the JSON file is in the same folder
+  });

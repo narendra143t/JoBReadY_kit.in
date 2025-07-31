@@ -1,0 +1,141 @@
+<div class="container"> 
+  <div class="welcome">
+    <h1>Welcome to Web Development 🌐</h1>
+    <p>Build stunning websites from scratch. Learn HTML, CSS, JavaScript, Bootstrap, React, and backend skills with hands-on video tutorials.</p>
+  </div>
+
+  <!-- HTML -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('html')">HTML <span>▶</span></div>
+    <div class="subtopics" id="html">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLxxxxxxHTML_ID" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- CSS -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('css')">CSS <span>▶</span></div>
+    <div class="subtopics" id="css">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLxxxxxxCSS_ID" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('js')">JavaScript <span>▶</span></div>
+    <div class="subtopics" id="js">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLxxxxxxJS_ID" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Bootstrap -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('bootstrap')">Bootstrap <span>▶</span></div>
+    <div class="subtopics" id="bootstrap">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLxxxxxxBOOTSTRAP_ID" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- React -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('react')">React <span>▶</span></div>
+    <div class="subtopics" id="react">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLxxxxxxREACT_ID" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleTopic(id) {
+    const el = document.getElementById(id);
+    el.style.display = el.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+<style>
+  body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.welcome h1 {
+  font-size: 28px;
+  color: #2b4eff;
+}
+
+.welcome p {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+  margin: auto;
+}
+
+.topic {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.topic-header {
+  padding: 15px 20px;
+  background: #2b4eff;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topic-header:hover {
+  background: #1e3bd6;
+}
+
+.subtopics {
+  display: none;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.subtopics iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+  border: none;
+  display: block;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .welcome h1 {
+    font-size: 22px;
+  }
+
+  .topic-header {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+
+  .subtopics iframe {
+    height: 200px;
+  }
+}
+
+</style>

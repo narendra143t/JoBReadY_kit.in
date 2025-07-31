@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Programming Topics</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .welcome {
+      background-color: #263576;
+      color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .welcome h1 {
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+
+    .topic {
+      background-color: #fff;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .topic-header {
+      background-color: #f19c3b;
+      padding: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.1rem;
+    }
+
+    .topic-header:hover {
+      background-color: #e28929;
+    }
+
+    .subtopics {
+      display: none;
+      padding: 10px;
+      background: #f4f4f4;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .welcome h1 {
+        font-size: 1.5rem;
+      }
+
+      iframe {
+        height: 200px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .container {
+        padding: 10px;
+      }
+
+      iframe {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container"> 
+    <div class="welcome">
+      <h1>Welcome to DSA & Problem Solving</h1>
+      <p>Sharpen your logic, strengthen your foundations. This section covers core topics in Data Structures and Algorithms to help you crack tech interviews and build solid problem-solving skills.</p>
+    </div>
+
+    <!-- DSA -->
+    <div class="topic">
+      <div class="topic-header" onclick="toggleTopic('dsa')">DSA (Beginner to Advanced) <span>▶</span></div>
+      <div class="subtopics" id="dsa">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLxxxxxxDSA" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Algorithms -->
+    <div class="topic">
+      <div class="topic-header" onclick="toggleTopic('algo')">Important Algorithms <span>▶</span></div>
+      <div class="subtopics" id="algo">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLxxxxxxAlgorithms" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Java Coding Practice -->
+    <div class="topic">
+      <div class="topic-header" onclick="toggleTopic('java')">Java Coding Practice <span>▶</span></div>
+      <div class="subtopics" id="java">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLxxxxxxJava" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Leetcode Patterns -->
+    <div class="topic">
+      <div class="topic-header" onclick="toggleTopic('leetcode')">Leetcode Patterns <span>▶</span></div>
+      <div class="subtopics" id="leetcode">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLxxxxxxLeetcode" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Aptitude + Logic -->
+    <div class="topic">
+      <div class="topic-header" onclick="toggleTopic('apt')">Aptitude & Logical Thinking <span>▶</span></div>
+      <div class="subtopics" id="apt">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLxxxxxxAptitude" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleTopic(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

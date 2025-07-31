@@ -1,0 +1,143 @@
+<div class="container">
+  <div class="welcome">
+    <h1>Welcome to Programming Basics 💻</h1>
+    <p>Master core programming languages essential for tech jobs and campus interviews. Start with syntax, logic, and hands-on videos in C, C++, Java, Python, and JavaScript.</p>
+  </div>
+
+  <!-- C Language -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('c')">C Programming <span>▶</span></div>
+    <div class="subtopics" id="c">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLxxxxxxC_playlist_id" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- C++ Language -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('cpp')">C++ Programming <span>▶</span></div>
+    <div class="subtopics" id="cpp">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLxxxxxxCpp_playlist_id" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Java -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('java')">Java Programming <span>▶</span></div>
+    <div class="subtopics" id="java">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLxxxxxxJava_playlist_id" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Python -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('python')">Python Programming <span>▶</span></div>
+    <div class="subtopics" id="python">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLxxxxxxPython_playlist_id" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <div class="topic">
+    <div class="topic-header" onclick="toggleTopic('js')">JavaScript <span>▶</span></div>
+    <div class="subtopics" id="js">
+      <iframe src="https://www.youtube.com/embed/videoseries?list=PLxxxxxxJS_playlist_id" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleTopic(id) {
+    const el = document.getElementById(id);
+    el.style.display = el.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+<!-- Reuse your existing CSS from the Aptitude page -->
+
+<style>
+  body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.welcome h1 {
+  font-size: 28px;
+  color: #2b4eff;
+}
+
+.welcome p {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+  margin: auto;
+}
+
+.topic {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.topic-header {
+  padding: 15px 20px;
+  background: #2b4eff;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topic-header:hover {
+  background: #1e3bd6;
+}
+
+.subtopics {
+  display: none;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.subtopics iframe {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+  border: none;
+  display: block;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .welcome h1 {
+    font-size: 22px;
+  }
+
+  .topic-header {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+
+  .subtopics iframe {
+    height: 200px;
+  }
+}
+
+</style>
